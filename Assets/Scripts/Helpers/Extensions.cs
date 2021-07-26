@@ -1,9 +1,14 @@
 ﻿using System.Collections.Generic;
 
-namespace Extensions
+namespace Helpers
 {
     public static class Extensions
     {
+        /// <summary>
+        /// Перемешать коллекцию IList
+        /// </summary>
+        /// <param name="ts">Коллекция IList</param>
+        /// <typeparam name="T">Тип объектов</typeparam>
         public static void Shuffle<T>(this IList<T> ts)
         {
             var count = ts.Count;

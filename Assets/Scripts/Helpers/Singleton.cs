@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
 
-namespace Extensions
+namespace Helpers
 {
+    /// <summary>
+    /// Generic Singleton для Monobehaviour
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {
         private static T _instance;

@@ -1,6 +1,6 @@
 ﻿{
   "InitialWires": 2,
   "WiresPerLevel": 0.5,
-  "InitialTime": 999,
-  "TimePerLevel": -1
+  "InitialTime": 15,
+  "TimePerLevel": -0.5
 }

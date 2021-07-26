@@ -689,10 +689,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 39.9
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -749,8 +749,9 @@ GameObject:
   m_Component:
   - component: {fileID: 328454837}
   - component: {fileID: 328454836}
+  - component: {fileID: 328454838}
   m_Layer: 0
-  m_Name: WireSpawner
+  m_Name: WireManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -768,8 +769,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c80c252f49344f4aa54563d1714b193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wirePrefab: {fileID: 4402674738911945021, guid: c234d6c8c1c0f564a8bb907c04889a85, type: 3}
-  wireParent: {fileID: 963620171}
 --- !u!4 &328454837
 Transform:
   m_ObjectHideFlags: 0
@@ -784,6 +783,21 @@ Transform:
   m_Father: {fileID: 1414050512}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &328454838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328454835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edb46873227e4bcaafb84f3f5d283ac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wirePrefab: {fileID: 4402674738911945021, guid: c234d6c8c1c0f564a8bb907c04889a85, type: 3}
+  wireParent: {fileID: 963620171}
+  preSpawnCount: 10
 --- !u!1 &468673461
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,7 +1087,7 @@ GameObject:
   - component: {fileID: 554250282}
   - component: {fileID: 554250281}
   m_Layer: 5
-  m_Name: QuitButton
+  m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1372,7 +1386,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 214.9067, y: 61.2667}
+  m_SizeDelta: {x: 138.42, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &773401231
 MonoBehaviour:
@@ -1421,10 +1435,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 25.6
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -2544,10 +2558,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defeatWindow: {fileID: 1623057365}
-  scoreboardWindow: {fileID: 115500942}
+  leaderboardWindow: {fileID: 115500942}
   statsWindow: {fileID: 1778400372}
   nameInput: {fileID: 1245108910}
-  scoreboardText: {fileID: 23340466}
+  leaderboardText: {fileID: 23340466}
   timerText: {fileID: 309148794}
   levelText: {fileID: 2126415435}
   scoreText: {fileID: 773401231}
@@ -3155,10 +3169,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
